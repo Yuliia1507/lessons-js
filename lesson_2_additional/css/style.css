@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+}
+
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.wrapper--padding {
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  padding: 0 toRem(15);
+  max-width: toRem(1400);
+}
+
+.header {
+  padding: 50px 0;
+}
+.header__logo {
+  text-align: center;
+  color: #ff0051;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hero {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ff0051;
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__title {
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 30px;
+  }
+}
+.hero__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+.hero__text {
+  font-size: 35px;
+  color: #242424;
+  font-weight: 500;
+}
+
+.hometask {
+  padding: 100px 10px;
+}
+.hometask__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.hometask__link-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #242424;
+  max-width: 780px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #ff0051;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+@media (any-hover: hover) {
+  .hometask__link-item:hover {
+    -webkit-box-shadow: 0 0 8px #ff0051, 0 0 16px #ff0051;
+            box-shadow: 0 0 8px #ff0051, 0 0 16px #ff0051;
+  }
+}
+.hometask__title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hometask__text {
+  font-size: 20px;
+}
+
+.block {
+  padding-bottom: 50px;
+}
+.block__item {
+  padding: 20px;
+  max-width: 800px;
+  background-color: #242424;
+  border-radius: 16px;
+  border: 1px solid #ff0051;
+}
+.block p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+table {
+  max-width: 600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid #ff0051;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.result p {
+  padding: 10px 0;
+}
+.result p:not(:last-child) {
+  border-bottom: 1px dotted #ff0051;
+}
+
+.text {
+  max-width: 700px;
+}

@@ -69,10 +69,12 @@ if (confirm('Почати тестування?')) {
 	document.write(`масив зі значенням, які що більші за 200: ${arrValuesOver200}<br>`)
 
 	// 7) відсортувати кожен тиждень за зростанням
-	for (const shop of profits) {
-		const sortedShop = [...shop].sort((a, b) => a - b)
-		console.log(sortedShop)
-	}
+for (let i = 0; i < profits.length; i++) {
+  profits[i].sort((a, b) => a - b);
+}
+
+console.log(profits);
+
 	// 8) відсортувати тижні(рядки) за спаданням максимального елементи у цьому тижні(рядку), тобто при порівнянні рядків потрібно порівнювати максимальні елементи у кожному з цих рядків
 	profits.sort((a, b) => Math.max(...b) - Math.max(...a))
 
@@ -88,6 +90,7 @@ if (confirm('Почати тестування?')) {
 	}
 
 }
+
 
 
 

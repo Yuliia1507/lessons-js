@@ -49,5 +49,5 @@ for (let i = 0; i < 100; i++) {
 	const step = Math.random() * 0.4 + 0.1;
 	const interval = Math.random() * 100 + 50;
 	const opacity = Math.random() * 0.5 + 0.5;
-	new Star('./img/star.png', minSize, maxSize, step, interval);
+	new Star('img/star.png', minSize, maxSize, step, interval);
 }
